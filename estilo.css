@@ -1,0 +1,111 @@
+body {
+    background-image:url(index/download.png);
+    background-repeat:repeat;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 90%;
+}
+tr:hover{
+    background-color:#f5f5f5;
+}
+input:hover,textarea:hover{
+    background-color:#f5f5f5;
+}
+h2 {
+    color: green;
+    text-decoration:underline;
+}
+a:hover{
+    color: grey;
+}
+h1{
+    color: blue;
+}
+
+li:first-of-type{
+    font-weight: bold;
+    font-size:20px;
+}
+textarea {
+  resize: none;
+  width: 80%;
+}  
+.indice{
+    font-family: 'DotGothic16', sans-serif;
+    
+    font-size:xx-large;
+    border-radius: 25px;
+    text-shadow: 
+    3px 3px blue;
+    
+    border: 4px solid #73AD21;
+    border-style: dotted;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+}
+.c1{
+    background: white;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.c2{
+    background: white;
+    margin: 0 auto;
+    width: 70%;
+}
+.c3{
+    display:block;
+    background: #33FCFF;
+    width: 70%;
+    margin: 0 auto;
+}
+.c4{
+    background: white;
+    margin: 0 auto;
+    width: 50%;
+    text-align:center;
+}
+.i1{
+    background:white;
+    width: 71%;
+    float:left;
+}
+.i2{
+    background:white;
+    width: 29%;
+    float:left;
+}
+.otros{
+    clear:both;
+    position: relative;
+    top: 10px;
+    border-radius: 25px;
+    width: 70%;
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+}
+#p1{
+    color: red;
+}
+
+#ini{
+    margin-top:100px;
+}
+#sha{
+    box-shadow:10px 10px black;    
+}
+

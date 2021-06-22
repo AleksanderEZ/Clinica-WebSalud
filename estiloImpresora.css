@@ -1,0 +1,320 @@
+/*Dashboard*/
+
+.login {
+    left: auto;
+}
+
+.loginMainBody {
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px;
+    gap: 0px 30px;
+    grid-template-areas: ". .";
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.medio {
+    display: grid;
+    grid-template-areas: ". .";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px auto;
+    padding-bottom: 20px;
+}
+
+.medioSub2 {
+    display: grid;
+    gap: 0px 10px;
+    padding: 40px;
+    grid-auto-flow: column;
+    justify-content: center;
+    height: auto;
+}
+
+
+/*Universal style for site. Background, sizing and shape.*/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    display: block;
+    font-family: Lato;
+    font-size: 105%;
+}
+
+.footer {
+    padding-top: 50px;
+    display: grid;
+    place-items: center;
+}
+
+
+/*Logo*/
+
+h1 {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 80px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    border-left: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 .titlecolor {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/*Slogan*/
+
+h2 {
+    padding-top: 50px;
+}
+
+
+/*Web navigation trio grid*/
+
+.interaccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". . .";
+    column-gap:175px;
+    padding-bottom:50px;
+    padding-top:50px;
+    margin-right: auto;*/
+}
+
+.interaccion div {
+    width: min-content;
+}
+
+.interaccion2 {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    height: auto;
+    grid-gap: 10rem;
+    padding: 20px;
+}
+
+.interaccion .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/*Front image*/
+
+#equipo {
+    height: 90%;
+    width: 90%;
+}
+
+
+/*Starting div with grid(logo+image)*/
+
+.titulo {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 100px;
+    grid-template-areas: ". .";
+}
+
+
+/*Text and list (about)*/
+
+#ventajas2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "." ".";
+    padding-right: 20px;
+}
+
+.margin {
+    text-indent: 50px;
+}
+
+
+/*Icon colors*/
+
+#telefono {
+    flex: 1 1 150px;
+    margin: 5px;
+}
+
+#cita {
+    flex: 1 1 150px;
+    margin: 5px;
+}
+
+#especialidades {
+    flex: 1 1 150px;
+    margin: 5px;
+}
+
+
+/*Hyperlink aesthetics*/
+
+a:link,
+a:visited {
+    padding: 0px 20px;
+    text-align: center;
+    display: inline-block;
+    width: 256px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+/*Universal image behaviour*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descripcion {
+    float: left;
+    display: grid;
+    height: auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+
+.descripcion .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1 rem;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.descripcion .visual {
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+/*Contact us text*/
+
+#textocontacto {
+    text-align: center;
+}
+
+
+/*Specialists table*/
+
+#especialidades {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#especialidades td,
+#especialidades th {
+    padding: 8px;
+}
+
+#especialidades th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+
+/*Style for appointment form*/
+
+.cita {
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+/*Text inputs, selectors and text areas more in depth*/
+
+.cita input,
+.cita select,
+.cita textarea {
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.cita input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+.cita input[type="radio"] {
+    position: relative;
+    right: 46%;
+}
+
+.cita textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.cita input[type="date"] {
+    background: #fff url(img/calendario.png) 97% 50% no-repeat;
+    color: grey;
+}
+
+.cita input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.cita input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+/*Collapse*/
+
+.collapse {
+    cursor: pointer;
+    display: block;
+}
+
+.collapse+input {
+    display: none;
+    /* hide the checkboxes */
+}
+
+.collapse+input+form {
+    display: none;
+}
+
+.collapse+input:checked+form {
+    display: block;
+}

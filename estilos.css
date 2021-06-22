@@ -1,0 +1,385 @@
+/*Dashboard*/
+
+.login {
+    left: auto;
+}
+
+.loginMainBody {
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px;
+    gap: 0px 30px;
+    grid-template-areas: ". .";
+    padding: 20px;
+    border-radius: 6px;
+    background: #FFFFF0;
+    box-shadow: 0 0 8px #669999;
+}
+
+.medio {
+    display: grid;
+    grid-template-areas: ". .";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px auto;
+    padding-bottom: 20px;
+}
+
+.medioSub2 {
+    display: grid;
+    gap: 0px 10px;
+    padding: 40px;
+    grid-auto-flow: column;
+    justify-content: center;
+    height: auto;
+}
+
+
+/*Universal style for site. Background, sizing and shape.*/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: #F5FFFA;
+    display: block;
+    font-family: Lato;
+    font-size: 105%;
+}
+
+.footer {
+    padding-top: 50px;
+}
+
+
+/*Logo*/
+
+h1 {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 80px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: #0DBDF1;
+    border-left: 10px;
+    border-bottom: 5px solid #ccffe6;
+    border-right: 5px solid #ccffe6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: white;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 .titlecolor {
+    color: #0DE51E;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/*Slogan*/
+
+h2 {
+    padding-top: 50px;
+}
+
+
+/*Web navigation trio grid*/
+
+.interaccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". . .";
+    column-gap:175px;
+    padding-bottom:50px;
+    padding-top:50px;
+    margin-right: auto;*/
+}
+
+.interaccion div {
+    width: min-content;
+}
+
+.interaccion2 {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    height: auto;
+    grid-gap: 10rem;
+    padding: 20px;
+}
+
+.interaccion .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+/*Front image*/
+
+#equipo {
+    height: 90%;
+    width: 90%;
+    border-bottom: 5px solid #ccffe6;
+    border-right: 5px solid #ccffe6;
+}
+
+
+/*Starting div with grid(logo+image)*/
+
+.titulo {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 100px;
+    grid-template-areas: ". .";
+}
+
+
+/*Text and list (about)*/
+
+#ventajas2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "." ".";
+    border: 1px solid black;
+    padding-right: 20px;
+    background: #FFFFF0;
+}
+
+.margin {
+    text-indent: 50px;
+}
+
+
+/*Icon colors*/
+
+#telefono {
+    background: #ccffcc;
+    flex: 1 1 150px;
+    margin: 5px;
+}
+
+#cita {
+    background: #fff0ff;
+    flex: 1 1 150px;
+    margin: 5px;
+}
+
+#especialidades {
+    background: #fff0f0;
+    flex: 1 1 150px;
+    margin: 5px;
+}
+
+
+/*Hyperlink aesthetics*/
+
+a:link,
+a:visited {
+    background-color: #FFFFF0;
+    color: blue;
+    border: 2px solid black;
+    padding: 0px 20px;
+    text-decoration:none;
+    text-align: center;
+    display: inline-block;
+    width: 256px;
+
+}
+a:link, a:visited, a:hover {
+    cursor: pointer;
+}
+
+a.transf{
+    transform: translate(50%, 0%);
+}
+
+/*Universal image behaviour*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descripcion {
+    float: left;
+    border: 2px solid black;
+    background-color: #FFFFF0;
+    display: grid;
+    height: auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+
+.descripcion .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1 rem;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.descripcion .visual {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+/*Contact us text*/
+
+#textocontacto {
+    text-align: center;
+    border: 2px solid black;
+    background-color: #FFFFF0;
+}
+
+
+/*Form mandatory(*) fields*/
+
+#campos {
+    color: red;
+    padding-top: 0px;
+}
+
+
+/*Specialists table*/
+
+#especialidades {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#especialidades td,
+#especialidades th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#especialidades tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#especialidades tr:hover {
+    background-color: #ddd;
+}
+
+#especialidades th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*Style for appointment form*/
+
+.cita {
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #FFFFF0;
+    box-shadow: 0 0 8px #669999;
+}
+
+
+/*Text inputs, selectors and text areas more in depth*/
+
+.cita input,
+.cita select,
+.cita textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.cita input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+.cita input[type="radio"] {
+    position: relative;
+    right: 46%;
+}
+
+.cita textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.cita input[type="date"] {
+    background: #fff url(img/calendario.png) 97% 50% no-repeat;
+    color: grey;
+}
+
+.cita input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.cita input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+/*Collapse*/
+
+.collapse {
+    cursor: pointer;
+    display: block;
+    background: #e9ad0a;
+}
+
+.collapse+input {
+    display: none;
+    /* hide the checkboxes */
+}
+
+.collapse+input+form {
+    display: none;
+}
+
+.collapse+input:checked+form {
+    display: block;
+}
+
+/*Validation error*/
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 25px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
