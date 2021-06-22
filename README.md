@@ -1,2 +1,2 @@
 # Clinica-WebSalud
-Web project HTTP+CSS+PHP+JS
+Web project HTTP+CSS+PHP+JS+SQLITE
